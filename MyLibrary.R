@@ -244,7 +244,7 @@ plot_bar <- function(data, with = NULL, maxcat = 50, order_bar = TRUE, title = N
   }
 }
 
-BarDiscrete <- function(data, maxcat = 50, order_bar = TRUE, title = NULL) {
+BarDiscrete <- function(data, maxcat = 1500, order_bar = TRUE, title = NULL) {
   .Deprecated("plot_bar")
   plot_bar(data = data, maxcat = maxcat, order_bar = order_bar, title = title)
 }
