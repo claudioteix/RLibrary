@@ -431,5 +431,5 @@ see_installed_packages <- function(p) {
 
 # Function to see the installed packages
 seeIp <- fucntion(p = FALSE) {
-  see_installed_packages()
+  see_installed_packages(p)
 }
