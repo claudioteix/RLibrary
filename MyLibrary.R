@@ -426,7 +426,7 @@ see_installed_packages <- function(p) {
   if (p == TRUE) {
     print(ip, row.names=FALSE)
   }
-  return (ip)
+  return(ip)
 }  
 
 # Function to see the installed packages
