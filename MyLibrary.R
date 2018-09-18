@@ -415,3 +415,21 @@ CorrelationContinuous <- function(data, title = NULL, ...) {
   .Deprecated("plot_correlation")
   plot_correlation(data = data, type = "continuous", title = title, ...)
 }
+#---------------------------------------------------#
+# Some miscellaneous functions 
+#---------------------------------------------------#
+
+see_installed_packages <- function(p) {
+  ip <- as.data.frame(installed.packages()[,c(1,3:4)])
+  rownames(ip) <- NULL
+  ip <- ip[is.na(ip$Priority),1:2,drop=FALSE]
+  if p {
+    print(ip, row.names=FALSE)
+  }
+  return ip
+}  
+
+# Function to see the installed packages
+seeIp <- fucntion(p = FALSE) {
+  see_installed_packages()
+}
